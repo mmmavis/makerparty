@@ -39,9 +39,9 @@
             <span class="fa fa-bars fa-lg"></span>
           </button>
           <a href="/" class="logo webmaker-logo"><img src="/img/makerparty_headerwordmark.png" alt="{{ gettext('Maker Party Wordmark') }}" /></a>
-          <div id="language-picker" style="float:right;">
-            {% include 'public/bower_components/webmaker-language-picker/template/supportedLanguages.html' %}
-          </div>
+        </div>
+        <div id="language-picker-container" style="float:right;">
+          {% include 'language-picker.html' %}
         </div>
       </div>
     </nav>
