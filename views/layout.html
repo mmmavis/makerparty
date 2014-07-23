@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700">
   <link href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" />
   <link rel="stylesheet" href="/bower_components/jquery-colorbox/example4/colorbox.css" />
+  <link rel="stylesheet" href="/bower_components/selectize/dist/css/selectize.bootstrap3.css" />
   <link rel="stylesheet" href="/compiled/style.min.css">
   {% block customStyles %}{% endblock %}
   <script src="//cdn.optimizely.com/js/206878104.js"></script>
@@ -40,7 +41,7 @@
           </button>
           <a href="/" class="logo webmaker-logo"><img src="/img/makerparty_headerwordmark.png" alt="{{ gettext('Maker Party Wordmark') }}" /></a>
         </div>
-        <div id="language-picker-container" style="float:right;">
+        <div class="language-picker-container hidden-xs">
           {% include 'language-picker.html' %}
         </div>
       </div>
@@ -48,9 +49,12 @@
     <!-- Primary nav ends -->
 
     <!-- Secondary nav -->
-    <nav class="navbar navbar-inverse navbar-no-header-xs">
+    <nav class="navbar navbar-inverse navbar-no-header-xs navbar-secondary">
       <div class="container">
         <div class="navbar-collapse collapse" id="mp-navbar-row">
+          <div class="language-picker-container visible-xs">
+            {% include 'language-picker.html' %}
+          </div>
           {% block navItems %}
           <ul class="nav navbar-nav">
             <li {% if page == 'home' %}class="active"{% endif %}><a href="/{{localeInfo.lang}}/">{{ gettext("Home") }}</a></li>

@@ -18,9 +18,11 @@
     "supportopen-quilt": "fuzzyfox/supportopen#~0.0.4",
     "webmaker-analytics": "0.1.0",
     "webmaker-i18n": "https://github.com/mozilla/node-webmaker-i18n/archive/v0.3.11.tar.gz",
-    "webmaker-language-picker": "0.0.22"
+    "webmaker-language-picker": "https://github.com/mmmavis/webmaker-language-picker/archive/v0.0.24.tar.gz"
   },
   "resolutions": {
-    "makerstrap": "0.1.1"
+    "makerstrap": "0.1.1",
+    "font-awesome": "4.0.3",
+    "jquery": ">= 1.9.0"
   }
 }

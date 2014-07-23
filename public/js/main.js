@@ -72,8 +72,8 @@ require([
     arrow: "left"
   });
 
-  //initialized language selectize -- used in signup for webmaker-auth-client
-  // $('#supportedLocales').selectize({});
+  //initialized language selectize
+  $('select[name=supportedLocales]').selectize();
 });
 
 
